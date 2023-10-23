@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gửi thông tin và ảnh đến chatbot Telegram</title>
+</head>
+<body>
+
+<h2>Nhập thông tin:</h2>
+
+<form action="/submit" method="post" enctype="multipart/form-data">
+    <label for="name">Họ tên:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="phone">Số điện thoại:</label>
+    <input type="text" id="phone" name="phone" required><br><br>
+
+    <label for="image">Ảnh:</label>
+    <input type="file" id="image" name="image" accept="image/*" required><br><br>
+
+    <input type="submit" value="Gửi thông tin và ảnh">
+</form>
+
+</body>
+</html>
